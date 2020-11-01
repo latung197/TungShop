@@ -15,5 +15,6 @@ namespace TungShop.Model.Model
         public string ID { get; set; }
         [Required]
         public string Name { get; set; }
+        public virtual IEnumerable<Menu> Menus { get; set; }
     }
 }
