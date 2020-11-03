@@ -27,6 +27,8 @@ namespace TungShop.Model.Model
         public string Description { get; set; }
         public int Warranty { get; set; }
 
+
+
         public virtual IEnumerable<Product> Products { get; set; }
 
     }
