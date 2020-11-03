@@ -54,6 +54,7 @@
     <Compile Include="Model\Menu.cs" />
     <Compile Include="Model\MenuGroup.cs" />
     <Compile Include="Model\Product.cs" />
+    <Compile Include="Model\ProductCategorie.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

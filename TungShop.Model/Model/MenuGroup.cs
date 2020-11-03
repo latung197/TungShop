@@ -12,6 +12,7 @@ namespace TungShop.Model.Model
     public class MenuGroup
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public string ID { get; set; }
         [Required]
         public string Name { get; set; }

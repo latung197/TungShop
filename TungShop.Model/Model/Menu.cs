@@ -12,12 +12,14 @@ namespace TungShop.Model.Model
     public class Menu
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         [Required]
         public string Name { get; set; }
-        [Required]
+        [Required][MaxLength(500)]
         public string URL { get; set; }
-        public string DisplayOder { get; set; }
+        public int? DisplayOder { get; set; }
+        [MaxLength(50)]
         public string Taget { get; set; }
         [Required]
         public bool Status { get; set; }
