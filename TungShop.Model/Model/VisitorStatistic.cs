@@ -11,6 +11,7 @@ namespace TungShop.Model.Model
 
     public class VisitorStatistic
     {
+
             [Key]
             public Guid ID { set; get; }
 
