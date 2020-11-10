@@ -30,7 +30,7 @@ namespace TungShop.Data.Infrastructure
             }
             IsDisposed = true;
         }
-
+        //  Lớp dọn rác 
         public virtual void DisposeCore()
         {
 
