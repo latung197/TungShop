@@ -15,7 +15,7 @@ namespace TungShop.Model.Model
         [MaxLength(50)]
         public string ID { set; get; }
         [Required]
-        public string Conten { set; get; }
+        public string Content { set; get; }
 
     }
 }

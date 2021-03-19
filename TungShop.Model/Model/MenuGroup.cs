@@ -13,7 +13,7 @@ namespace TungShop.Model.Model
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public string ID { get; set; }
+        public int ID { get; set; }
         [MaxLength(250)]
         [Required]
         public string Name { get; set; }
