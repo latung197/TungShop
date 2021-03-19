@@ -9,9 +9,18 @@ namespace TungShop.Data.Infrastructure
 {
     public class DbFactory : Disposable, IDbFactory
     {
+        private TungshopDbContext dbContext;
         public TungshopDbContext Init()
         {
-            throw new NotImplementedException();
+            return dbContext ?? (dbContext = new TungshopDbContext());
+        }   
+
+        public override void DisposeCore()
+        {
+            if (dbContext != null)
+            {
+                dbContext.Dispose();
+            }
         }
     }
 }

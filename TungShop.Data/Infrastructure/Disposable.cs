@@ -10,7 +10,7 @@ namespace TungShop.Data.Infrastructure
     {
 
         private bool IsDisposed;
-
+        // ~ tuong tu using tự động hủy
         ~Disposable()
         {
             Dispose(false);
@@ -30,7 +30,7 @@ namespace TungShop.Data.Infrastructure
             }
             IsDisposed = true;
         }
-        //  Lớp dọn rác 
+        //  Lớp dọn rác hệ thống
         public virtual void DisposeCore()
         {
 

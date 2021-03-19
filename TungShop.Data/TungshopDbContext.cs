@@ -12,6 +12,7 @@ namespace TungShop.Data
     {
         public TungshopDbContext() : base("Tungshop")   
         {
+            // Load bang cha khong tu dong load bang con
             this.Configuration.LazyLoadingEnabled = false;
         } 
 
@@ -33,6 +34,7 @@ namespace TungShop.Data
         public DbSet<Tag> Tags { get; set; }
         public DbSet<VisitorStatistic> VisitorStatistics { get; set; }
 
+        // phuong thuc cua DB contex- chay khi khoi tao entity famwork
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

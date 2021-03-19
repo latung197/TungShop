@@ -10,6 +10,5 @@ namespace TungShop.Model.Infrastructure
     public interface IDbFactory : IDisposable
     {
         TungshopDbContext Init();
-
     }
 }
