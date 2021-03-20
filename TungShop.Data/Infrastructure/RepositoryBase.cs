@@ -9,7 +9,7 @@ using System.Linq.Expressions;
 
 namespace TungShop.Data.Infrastructure
 {
-    public abstract class ReposetoryBase<T> where T: class
+    public abstract class ReposetoryBase<T>: IReposetory<T> where T: class
     {
         #region Properties
         private TungshopDbContext dataContext;
