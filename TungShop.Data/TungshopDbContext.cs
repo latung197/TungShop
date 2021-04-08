@@ -10,7 +10,7 @@ namespace TungShop.Data
 {
     public class TungshopDbContext :DbContext
     {
-        public TungshopDbContext() : base("Tungshop")   
+        public TungshopDbContext() : base("Tungshop")   //Chuỗi Tungshop khai báo trong App.config
         {
             // Load bang cha khong tu dong load bang con
             this.Configuration.LazyLoadingEnabled = false;

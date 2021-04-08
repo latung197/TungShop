@@ -19,7 +19,7 @@ namespace TungShop.Model.Model
         [MaxLength(256)]
         public string Name { set; get; }
 
-        [Column(TypeName = "varchar")]
+        [Column(TypeName = "varchar")]// chỉ định data kiểu varchar
         [MaxLength(256)]
         [Required]
         public string Alias { set; get; }

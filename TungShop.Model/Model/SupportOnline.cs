@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TungShop.Model.Model
 {
+    [Table("SupportOnline")]
     public class SupportOnline
     {
         [Key]

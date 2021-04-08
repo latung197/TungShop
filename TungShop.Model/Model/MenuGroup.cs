@@ -12,11 +12,11 @@ namespace TungShop.Model.Model
     public class MenuGroup
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]//ID tự động tăng
         public int ID { get; set; }
         [MaxLength(250)]
         [Required]
         public string Name { get; set; }
-        public virtual IEnumerable<Menu> Menus { get; set; }
+        public virtual IEnumerable<Menu> Menus { get; set; }// 1 MenuGroup chưa nhiều Menus
     }
 }
