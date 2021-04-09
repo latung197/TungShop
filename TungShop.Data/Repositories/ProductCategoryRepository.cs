@@ -12,7 +12,7 @@ namespace TungShop.Data.Repositories
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }
-    public class ProductCategoryRepository : ReposetoryBase<ProductCategory>, IProductCategoryRepository
+    public class ProductCategoryRepository : RepositoryBase<ProductCategory>, IProductCategoryRepository
     {
         public ProductCategoryRepository(IDbFactory dbFactory) : base(dbFactory)
         {

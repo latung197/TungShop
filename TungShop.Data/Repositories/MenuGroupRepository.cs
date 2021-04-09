@@ -8,13 +8,14 @@ using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
 namespace TungShop.Data.Repositories
 {
-    public interface IMenuRepository// 
+    public interface IMenuGroupRepository
     {
 
     }
-    public class MenuRepository: RepositoryBase<Menu>,IMenuRepository
+    public class MenuGroupRepository:  RepositoryBase<MenuGroup>,IMenuGroupRepository
     {
-        public MenuRepository(IDbFactory dbFactory) : base(dbFactory)
+      
+        public MenuGroupRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }

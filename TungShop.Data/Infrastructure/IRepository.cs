@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace TungShop.Model.Infrastructure
 {
-    public interface IReposetory<T> where T: class
+    public interface IRepository<T> where T: class
 
     {
         void Add(T entity);

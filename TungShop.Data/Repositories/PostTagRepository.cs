@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TungShop.Data.Infrastructure;
-using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
+using TungShop.Model.Infrastructure;
+
 namespace TungShop.Data.Repositories
 {
-    public interface IMenuRepository// 
+    public interface IPostTagRepository
     {
 
     }
-    public class MenuRepository: RepositoryBase<Menu>,IMenuRepository
+
+    public class PostTagRepository:RepositoryBase<PostTag>,IPostTagRepository
     {
-        public MenuRepository(IDbFactory dbFactory) : base(dbFactory)
+        public PostTagRepository(IDbFactory dbFactory) : base(dbFactory)
         {
 
         }

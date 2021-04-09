@@ -8,15 +8,16 @@ using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
 namespace TungShop.Data.Repositories
 {
-    public interface IMenuRepository// 
+    public interface IOrderRepository
     {
 
     }
-    public class MenuRepository: RepositoryBase<Menu>,IMenuRepository
+    public class OrderRepository:RepositoryBase<Order>,IOrderRepository
     {
-        public MenuRepository(IDbFactory dbFactory) : base(dbFactory)
+        public OrderRepository(IDbFactory dbFactory ): base(dbFactory)
         {
 
         }
+
     }
 }

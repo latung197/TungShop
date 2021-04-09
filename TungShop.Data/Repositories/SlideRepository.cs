@@ -4,17 +4,19 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TungShop.Data.Infrastructure;
-using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
+using TungShop.Model.Infrastructure;
+
 namespace TungShop.Data.Repositories
 {
-    public interface IMenuRepository// 
+    public interface ISlideRepository
     {
 
     }
-    public class MenuRepository: RepositoryBase<Menu>,IMenuRepository
+
+    public class SlideRepository:RepositoryBase<Slide>
     {
-        public MenuRepository(IDbFactory dbFactory) : base(dbFactory)
+        public SlideRepository(IDbFactory dbFactory): base(dbFactory)
         {
 
         }

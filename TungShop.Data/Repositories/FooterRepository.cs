@@ -14,7 +14,7 @@ namespace TungShop.Data.Repositories
     {
         IEnumerable<Footer> GetByContent(string content);
     }
-    public class FooterRepository : ReposetoryBase<Footer>,IFooterRepository
+    public class FooterRepository : RepositoryBase<Footer>,IFooterRepository
     {
         public FooterRepository(IDbFactory dbFactory) : base(dbFactory)
         {
