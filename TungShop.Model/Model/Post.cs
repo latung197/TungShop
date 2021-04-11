@@ -5,10 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TungShop.Model.Abstract;
+
 namespace TungShop.Model.Model
 {
     [Table("Posts")]
-    public class Post
+    public class Post: Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -40,5 +42,8 @@ namespace TungShop.Model.Model
 
         [ForeignKey("CategoryID")]
         public virtual PostCategory PostCategory { set; get; }
+
+        public virtual IEnumerable<PostTag> PostTag { set; get; }
+
     }
 }

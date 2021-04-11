@@ -49,6 +49,12 @@ namespace TungShop.Data.Infrastructure
             dbSet.Remove(entity);
         }
 
+        public virtual void Delete(int ID)
+        {
+            var entity = dbSet.Find(ID);
+            dbSet.Remove(entity);
+        }
+
         public virtual void DeleteMulti(Expression<Func<T, bool>> where)
         {
             IEnumerable<T> objects = dbSet.Where<T>(where).AsEnumerable();
@@ -132,6 +138,8 @@ namespace TungShop.Data.Infrastructure
         {
             return dataContext.Set<T>().Count<T>(predicate) > 0;
         }
+
+        
         #endregion
 
     }

@@ -8,7 +8,7 @@ using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
 namespace TungShop.Data.Repositories
 {
-    public interface IProductCategoryRepository
+    public interface IProductCategoryRepository: IRepository<ProductCategory>
     {
         IEnumerable<ProductCategory> GetByAlias(string alias);
     }

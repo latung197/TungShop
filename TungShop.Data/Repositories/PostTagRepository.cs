@@ -9,7 +9,7 @@ using TungShop.Model.Infrastructure;
 
 namespace TungShop.Data.Repositories
 {
-    public interface IPostTagRepository
+    public interface IPostTagRepository: IRepository<PostTag>
     {
 
     }

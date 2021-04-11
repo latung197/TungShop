@@ -8,6 +8,10 @@ using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
 namespace TungShop.Data.Repositories
 {
+    public interface IPageRepository:IRepository<Page>
+    {
+
+    }
     public class PageRepository:RepositoryBase<Page>
     {
         public PageRepository(IDbFactory dbFactory):base(dbFactory)

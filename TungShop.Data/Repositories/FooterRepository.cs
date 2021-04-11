@@ -10,7 +10,7 @@ using TungShop.Model.Infrastructure;
 
 namespace TungShop.Data.Repositories
 {
-    public interface IFooterRepository// Interface chiển khai các phương thức khác
+    public interface IFooterRepository: IRepository<Footer>// Interface chiển khai các phương thức khác
     {
         IEnumerable<Footer> GetByContent(string content);
     }

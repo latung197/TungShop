@@ -9,7 +9,7 @@ using TungShop.Model.Infrastructure;
 
 namespace TungShop.Data.Repositories
 {
-    public interface IOrderDetailRepositoey
+    public interface IOrderDetailRepositoey:IRepository<OrderDetail>
     {
 
     }

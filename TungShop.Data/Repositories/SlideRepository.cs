@@ -9,7 +9,7 @@ using TungShop.Model.Infrastructure;
 
 namespace TungShop.Data.Repositories
 {
-    public interface ISlideRepository
+    public interface ISlideRepository: IRepository<Slide>
     {
 
     }

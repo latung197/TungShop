@@ -5,11 +5,12 @@ using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using TungShop.Model.Abstract;
 
 namespace TungShop.Model.Model
 {
     [Table("PostCategories")]
-    public class PostCategory
+    public class PostCategory: Auditable
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]

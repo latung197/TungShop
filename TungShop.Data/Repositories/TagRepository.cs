@@ -8,7 +8,7 @@ using TungShop.Model.Model;
 using TungShop.Model.Infrastructure;
 namespace TungShop.Data.Repositories
 {
-    public interface ITagRepository
+    public interface ITagRepository: IRepository<Tag>
     {
 
     }

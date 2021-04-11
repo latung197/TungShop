@@ -8,7 +8,7 @@ using TungShop.Model.Infrastructure;
 using TungShop.Data.Infrastructure;
 namespace TungShop.Data.Repositories
 {
-    public interface IPostCategoryRepository
+    public interface IPostCategoryRepository:IRepository<PostCategory>
     {
 
     }

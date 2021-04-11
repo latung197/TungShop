@@ -59,6 +59,10 @@
     <Compile Include="Migrations\202104081532294_InitiaDB.Designer.cs">
       <DependentUpon>202104081532294_InitiaDB.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202104101526294_Init2.cs" />
+    <Compile Include="Migrations\202104101526294_Init2.Designer.cs">
+      <DependentUpon>202104101526294_Init2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Migrations\ProductTagRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -97,6 +101,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202104081532294_InitiaDB.resx">
       <DependentUpon>202104081532294_InitiaDB.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202104101526294_Init2.resx">
+      <DependentUpon>202104101526294_Init2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

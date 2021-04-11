@@ -13,6 +13,8 @@ namespace TungShop.Model.Infrastructure
         void Add(T entity);
         void Update(T entity);
         void Delete(T entity);
+        void Delete(int ID);
+
         // Marks an entity to be removed
 
         //Delete multi records

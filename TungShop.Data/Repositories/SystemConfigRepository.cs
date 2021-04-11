@@ -8,7 +8,7 @@ using TungShop.Model.Model;
 using TungShop.Model.Infrastructure;
 namespace TungShop.Data.Repositories
 {
-    public interface ISystemConfigRepository
+    public interface ISystemConfigRepository: IRepository<SystemConfig>
     {
 
     }

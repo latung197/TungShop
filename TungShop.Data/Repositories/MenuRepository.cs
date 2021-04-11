@@ -8,7 +8,7 @@ using TungShop.Model.Infrastructure;
 using TungShop.Model.Model;
 namespace TungShop.Data.Repositories
 {
-    public interface IMenuRepository// 
+    public interface IMenuRepository : IRepository<Menu>// 
     {
 
     }
